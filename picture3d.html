@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.div1{
+			width: 1200px;
+			height: 200px;
+			margin:100px auto;
+			padding-top: 200px;
+			perspective:3000px;
+		}
+		.div2{
+			width: 200px;
+			height: 150px;
+			margin:0 auto;
+			position:relative;
+			transform-style:preserve-3d;
+			animation:aa 5s infinite linear;
+			transform:rotateX(-20deg);
+		}
+		.div2:hover{
+			animation-play-state:paused;
+		}
+		.div2 img:hover{
+			transform:scale(1.4);
+			cursor:pointer;
+		}
+		img{
+			width: 200px;
+			height: 150px;
+			position:absolute;
+			top:0;
+			left:0;
+			transition:all .7s;
+		}
+		div:nth-child(1){
+			transform:rotateY(0deg) translateZ(300px);
+		}
+		div:nth-child(2){
+			transform:rotateY(45deg) translateZ(300px);
+		}
+		div:nth-child(3){
+			transform:rotateY(90deg) translateZ(300px);
+		}
+		div:nth-child(4){
+			transform:rotateY(135deg) translateZ(300px);
+		}
+		div:nth-child(5){
+			transform:rotateY(180deg) translateZ(300px);
+		}
+		div:nth-child(6){
+			transform:rotateY(225deg) translateZ(300px);
+		}
+		div:nth-child(7){
+			transform:rotateY(270deg) translateZ(300px);
+		}
+		div:nth-child(8){
+			transform:rotateY(315deg) translateZ(300px);
+		}
+		@keyframes aa{
+			0%{
+				transform:rotateX(-20deg) rotateY(0deg);
+			}
+			10%{
+				transform:rotateX(-20deg) rotateY(36deg);
+			}
+			20%{
+				transform:rotateX(-20deg) rotateY(72deg);
+			}
+			30%{
+				transform:rotateX(-20deg) rotateY(108deg);
+			}
+			40%{
+				transform:rotateX(-20deg) rotateY(144deg);
+			}
+			50%{
+				transform:rotateX(-20deg) rotateY(180deg);
+			}
+			60%{
+				transform:rotateX(-20deg) rotateY(216deg);
+			}
+			70%{
+				transform:rotateX(-20deg) rotateY(252deg);
+			}
+			80%{
+				transform:rotateX(-20deg) rotateY(288deg);
+			}
+			90%{
+				transform:rotateX(-20deg) rotateY(324deg);
+			}
+			100%{
+				transform:rotateX(-20deg) rotateY(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div class="div2">
+			<div>
+				<img src="./img/1.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/2.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/3.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/4.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/5.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/6.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/7.jpg" alt="">
+			</div>
+			<div>
+				<img src="./img/8.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
